@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<body>
+    <style>
+        .square {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+
+        }
+
+        #input_1,
+        #input_2,
+        #input_3,
+        #name,
+        #surname {
+            margin-top: 15px;
+
+        }
+
+        .element {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            margin-top: 20px;
+        }
+
+        .element_1 {
+            width: 100px;
+            height: 100px;
+            border: 3px solid blue;
+            margin-top: 20px;
+        }
+
+        #hide {
+            display: block;
+            margin: 10px 0 10px;
+        }
+
+        .table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        #surname,
+        #name {
+            display: block;
+            width: 205px;
+            margin: 15px 0 15px 0;
+        }
+
+        #entry_btn {
+            margin-bottom: 10px;
+        }
+
+        .element_to_move {
+            width: 80px;
+            height: 80px;
+            background-color: chartreuse;
+            border-radius: 50%;
+            border: 1px solid #000;
+            margin: 30px 10px 30px 10px;
+            position: absolute;
+        }
+    </style>
+    <div class="coordinates"></div>
+    <p>Нажмите в любое место.</p>
+    <div class="square"></div>
+
+    <input type="text" placeholder="Введите текст" id="input_1">
+    <div>Код нажатой клавиши: <span class="key_code">?</span></div>
+
+    <input type="text" placeholder="Введите текст" id="input_2">
+    <div>Нажатая клавиша: <span class="key">?</span></div>
+
+    <div class="element"></div>
+
+    <div class="element_1"></div>
+
+    <input type="text" placeholder="Введите текст" id="input_3">
+    <p class="show_text"></p>
+
+    <ul class="ul_list">
+        <li>пункт</li>
+        <li>пункт</li>
+        <li>пункт</li>
+    </ul>
+
+    <button class="button">Кнопка</button>
+
+    <button id="hide">Спрятаться</button>
+
+    <button class="btn">Спрятать элемент с id = hide</button>
+    <h2>Пользователи</h2>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Имя</th>
+                <th>Фамилия</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>123</td>
+                <td>123</td>
+            </tr>
+            <tr>
+                <td>123</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <input type="text" id="name" placeholder="Укажите имя пользователя">
+    <input type="text" id="surname" placeholder="Укажите фамилию пользователя">
+
+    <button id="entry_btn">Добавить в таблицу</button>
+
+    <div class="element_to_move"></div>
+
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolor nulla earum, sed dicta officiis! Repellat
+        voluptate enim error veniam quia explicabo aperiam delectus magni? Facilis libero eaque ipsa earum.
+        Quos facere iure ratione nulla reiciendis earum dolorem optio quibusdam quod cumque delectus, qui illum atque?
+        Eos
+        nobis dolor doloremque! Odio temporibus illo dignissimos amet ipsam at ut iusto qui.
+        Maxime molestias praesentium quam, porro repellendus totam qui ipsa tenetur. Atque perspiciatis, sapiente
+        eveniet
+        numquam aspernatur ullam fugit iusto voluptatem voluptas quas voluptatum consectetur rerum autem tenetur,
+        incidunt
+        dolor voluptatibus.
+        Doloribus debitis beatae corporis? Earum, eum? Soluta odit non illum rerum adipisci nulla excepturi ipsa
+        exercitationem sint harum deserunt ratione magni accusantium veritatis autem dignissimos possimus quisquam, sed
+        pariatur ad.
+        Facilis sit dolor reprehenderit et? Debitis nulla minus, vitae iure, exercitationem sint ut quos quibusdam modi
+        aspernatur voluptatum odio blanditiis mollitia ad amet soluta ea magni sed unde dicta. Ducimus!
+        Officiis neque eaque pariatur alias nostrum reiciendis nesciunt quia. Nostrum adipisci reprehenderit enim quos,
+        aut
+        fugit similique provident in ipsum iusto incidunt et atque! Error ipsam quo sapiente magnam id?
+        Voluptas sunt veritatis, ducimus consequatur, dolore enim doloribus minus id assumenda sed et quidem. Quisquam
+        reprehenderit velit molestias excepturi modi nemo aspernatur officia, odit assumenda exercitationem ex tempore
+        nulla
+        sed.
+        Cupiditate voluptates, optio tenetur nobis aspernatur veniam doloribus necessitatibus ut, perspiciatis eius
+        molestias porro iusto, nisi nemo facilis! Reiciendis non velit animi dolores pariatur. Dolore possimus eum modi
+        ut
+        ab.
+        Possimus iusto ea odit, deserunt rerum harum quos aliquam in doloremque obcaecati sapiente quibusdam est
+        voluptatum
+        doloribus ratione nulla dolorem quasi eum optio quas dolore ut repellendus commodi corrupti. Dicta.
+        Quis, rem inventore. Quo impedit facilis eos cum inventore repudiandae totam illum voluptatum. Quisquam pariatur
+        praesentium magni vitae ab totam, at modi ipsam quasi, suscipit a iusto animi enim similique.
+        Amet, accusantium. Ratione, et! Ratione repellendus maiores asperiores voluptates accusamus eveniet neque
+        sapiente
+        pariatur, facilis nihil soluta illum distinctio voluptas eius in ab omnis deserunt fugit laborum fugiat a
+        libero!
+        Architecto, veniam fugiat quaerat veritatis totam numquam, molestias perspiciatis fugit exercitationem id
+        mollitia
+        quam ex ea nemo quisquam, sequi recusandae. Magni assumenda obcaecati, voluptatem ad cupiditate fugit corrupti
+        impedit voluptatum!
+        Vel minima beatae, nam debitis quasi assumenda, laborum voluptatibus totam voluptatum eligendi veniam impedit
+        doloribus laboriosam libero voluptatem non, vero deleniti dolorum officia quidem. Quibusdam obcaecati iusto enim
+        voluptas veritatis.
+        Eaque officiis eos suscipit cum veritatis ab, vel a esse fugit animi quisquam iure nostrum ipsa, voluptas
+        doloremque
+        adipisci quis voluptate tempore laboriosam fuga modi repellendus. Ut laborum pariatur quia.
+        Fugit, impedit? Quasi vel tenetur, eveniet ratione voluptate libero voluptates sunt harum minima perspiciatis
+        architecto ex molestiae ipsa perferendis veniam incidunt. Omnis excepturi delectus quam saepe veritatis iure
+        iste
+        voluptatum!
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
